@@ -5,9 +5,14 @@ import numpy as np
 mnist = tf.keras.datasets.mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-new_model = tf.keras.models.load_model('number_reader.model')
+new_model = tf.keras.models.load_model('Models/number_reader.model')
 predictions = new_model.predict(x_test)
 
-print(np.argmax(predictions[0]))
+# Change the index, i, to some other number to change which is predicted via the model
 
-plt.imshow(x_test[0])
+i = 21
+
+print(np.argmax(predictions[i]))
+
+plt.imshow(x_test[i])
+plt.show()
