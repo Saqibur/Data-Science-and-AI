@@ -10,6 +10,8 @@ mnist = tf.keras.datasets.mnist
 x_train = tf.keras.utils.normalize(x_train, axis = 1)
 x_test = tf.keras.utils.normalize(x_test, axis = 1)
 
+# Try later on without normalizing the data, apparently, it makes a significant difference.
+
 # for i in range(0, 100):
 plt.imshow(x_train[0], cmap = plt.cm.binary) # for black and white drawing
 # plt.imshow(x_train[i])
