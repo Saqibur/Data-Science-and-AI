@@ -52,7 +52,7 @@ pickle.dump(X, pickle_out)
 pickle_out.close()
 
 pickle_out = open("y-Cat-Dog-Labels.pickle", "wb")
-pickle.dump(X, pickle_out)
+pickle.dump(y, pickle_out)
 pickle_out.close()
 
 # Reading the created data.
