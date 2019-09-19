@@ -10,7 +10,7 @@ predictions = new_model.predict(x_test)
 
 # Change the index, i, to some other number to change which is predicted via the model
 
-i = 65
+i = 96
 
 print(np.argmax(predictions[i]))
 
