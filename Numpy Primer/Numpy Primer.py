@@ -66,3 +66,5 @@ print(matrix[0:2, 0:4])
 # Masking a matrix is possible as well.
 print (matrix > 50)
 print(matrix[matrix > 50])
+
+# NumPy is generally used for array/tensor manipulation.
