@@ -10,9 +10,9 @@ predictions = new_model.predict(x_test)
 
 # Change the index, i, to some other number to change which is predicted via the model
 
-i = 96
+i = 23
 
 print(np.argmax(predictions[i]))
 
-plt.imshow(x_test[i])
+plt.imshow(x_test[i], cmap='gray')
 plt.show()
