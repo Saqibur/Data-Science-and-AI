@@ -1,6 +1,7 @@
 import cv2, time
 
 camera = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+# camera = cv2.VideoCapture("video.mp4")
 face_cascade = cv2.CascadeClassifier()
 face_cascade.load('haarcascade_frontalface_default.xml')
 
