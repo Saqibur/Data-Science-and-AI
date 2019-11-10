@@ -13,10 +13,11 @@ print(face_cascade.empty())
 image_path = "./images/barca.jpg"
 
 image = cv2.imread(image_path)
+resized_image = cv2.resize(image, (int(image.shape[1]/2), int(image.shape[0]/2)))
 
 gray_img =cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow("Before Face Detection", image)
+cv2.imshow("Before Face Detection", resized_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -31,9 +32,10 @@ for x, y, width, height in faces:
     print("Y coordinate: ", y)
     print("Width of face: ", width)
     print("Length of face: ", height)
-    image = cv2.rectangle(image, pt1=(x, y), pt2=(x + width, y + height), color=(0, 255, 0), thickness=1)
+    image = cv2.rectangle(image, pt1=(x, y), pt2=(x + width, y + height), color=(0, 255, 0), thickness=2)
 
-cv2.imshow("After Face Detection", image)
+resized_image = cv2.resize(image, (int(image.shape[1]/2), int(image.shape[0]/2)))
+cv2.imshow("After Face Detection", resized_image)
 cv2.waitKey(0)
 
 print("Detected ", len(faces), " faces.")
