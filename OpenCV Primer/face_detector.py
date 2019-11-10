@@ -16,7 +16,7 @@ image = cv2.imread(image_path)
 
 gray_img =cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow("GrayScale", gray_img)
+cv2.imshow("Before Face Detection", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
