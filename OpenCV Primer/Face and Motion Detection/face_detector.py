@@ -13,7 +13,7 @@ print(face_cascade.empty())
 image_path = "./images/barca.jpg"
 
 image = cv2.imread(image_path)
-resized_image = cv2.resize(image, (int(image.shape[1]/2), int(image.shape[0]/2)))
+resized_image = cv2.resize(image, (int(image.shape[1]/3), int(image.shape[0]/3)))
 
 gray_img =cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
