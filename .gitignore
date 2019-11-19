@@ -1,3 +1,10 @@
 *.txt
 tempCodeRunnerFile.py
 *.ipynb_checkpoints
+*.mp4
+*.jpg
+*.png
+*.avi
+
+yolov3.cfg
+yolov3.weights
